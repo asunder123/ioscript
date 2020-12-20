@@ -1,15 +1,15 @@
 #!/bin/bash
+echo "Enter first word:"
+read first
+echo "::::"
+echo "Enter second word:"
+read second
+echo "::::::"
 
-File=/opt/file1.txt
-
-{
-read line1
-read line2
-} < $File
-
-echo "First line in $File is:"
-echo "$line1"
-echo "Second line in $file is:"
-echo "$line2"
-
-exit 0
+if [[ "$first" < "$second" ]]
+then 
+ echo "Although $first precede $second in the dictionary,"
+ echo -n "this doest not imply anything"
+else
+ echo "What dictionary is being used anyhow?"
+fi
