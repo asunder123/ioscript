@@ -1,6 +1,8 @@
 #!/bin/bash
-
-File=/opt/file1.txt
+cd /opt
+read file2
+sudo touch $file2
+File=/opt/$file2
 
 {
 read line1
