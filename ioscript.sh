@@ -8,8 +8,7 @@ echo "::::::"
 
 if [[ "$first" < "$second" ]]
 then 
- echo "Although $first precede $second in the dictionary,"
- echo -n "this doest not imply anything"
+ echo "$first precedes $second"
 else
- echo "What dictionary is being used anyhow?"
+ echo "$first succeeds $second"
 fi
